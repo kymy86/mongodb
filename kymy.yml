@@ -1,0 +1,7 @@
+db:
+    image: kymy/mongodb
+    environment: 
+        MONGODB_PASS: "admin"
+    ports:
+        - 27017:27017
+        - 28017:28017
