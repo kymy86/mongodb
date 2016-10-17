@@ -2,5 +2,6 @@ kymy.yml
 .git
 .gitignore
 .DS_Store
+.travis.yml
 README.md
 LICENSE.md
