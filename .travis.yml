@@ -3,6 +3,12 @@ sudo: required
 services:
     - docker
 
+language:
+    - bash
+
+before_script:
+    - curl -L "http://downloads.sourceforge.net/shunit2/shunit2-2.0.3.tgz" | tar zx
+
 env:
   global:
   - secure: arnqVMkyoL6l3gkMF8JFjHJj0l91fkv7iM4qEjnB2jCkVm3eIy2DgbZufuBTpeX2DoqpawwuqrSz+e9mO7tIl2mkSwZnpr4ZZh8bHcs1hiNIZNMoyXQIsqR2y8509kW3wh8mwEJaIoInTBBFOA8BKizx5ju28h8W75WgwQEuv/qvSgQK+fAzYd+r/qwuIH2WGL62L9l8i2aMTAvbgCLFlHwsXrqpdzx2Dnb5Cz5CaMy657b6XV50MVokwqkBOHEQOZznSsM3xAtprgXPlFYdPdEeMcUvtnIVdVMxSDPBFPfCsknpuIsOIx96FQP2BzNUmVc4jji5kyio4I4lpzc6TT62O7HvEYwlUr4/eBCAoQgAUlb+R+RLb9/2lxrCjyxu6+2CqQLFWZeQ3GLW3WDvBaog1dsQvrSZPY33njaT2U7Y7Z+KMVHwwPYCr7ZAB3p/lX2SyC4ettyTHT9uDNc9aXmBN0hVEvPPy06TFWr5Uzr8fbK4ADwZSo+YxNPqHBQf8dzH/VMJFcDOvrGANZ9hw4//KBU6ODMu02L09n3aro1R/GRsKgWJQsqQ0dxhmgYhgh7f0dluzrQxxM3yKyc4ej7y0xIPgVu/4vkJ/wcrfaFBmbb33erHX+jPWhjMC6yZRGjjM3vw3l9qG7VIrtim3ITwX684nNa9k5Qny7wKHIg= #DOCKER_EMAIL
